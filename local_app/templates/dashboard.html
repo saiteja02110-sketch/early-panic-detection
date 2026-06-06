@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Anomaly Detection Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-color: #1f2833;
+            --accent-cyan: #66fcf1;
+            --accent-blue: #45a29e;
+            --text-main: #c5c6c7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--card-color);
+            padding-bottom: 15px;
+            width: 80%;
+        }
+
+        h1 {
+            color: white;
+            margin: 5px 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: var(--accent-cyan);
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .dashboard-container {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .video-box {
+            background-color: var(--card-color);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+        }
+
+        .video-box img {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .side-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 300px;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--accent-blue);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            background-color: #0f172a;
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h3>SAVEETHA SCHOOL OF ENGINEERING</h3>
+        <h1>Real-Time Crowd Panic & Anomaly Detection System</h1>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="video-box">
+            <img src="/video_feed" alt="Live CNN Surveillance Processing Feed">
+        </div>
+
+        <div class="side-panel">
+            <div class="card">
+                <h2>System Parameters</h2>
+                <p><strong>Input Node:</strong> http://10.82.81.51:8080</p>
+                <p><strong>Core Engine:</strong> CNN Density Estimator</p>
+                <p><strong>Analytics Mode:</strong> Real-time Heatmap Generation</p>
+            </div>
+
+            <div class="card">
+                <h2>Analysis Analytics</h2>
+                <p>Status Monitoring State:</p>
+                <div class="status-indicator">SYSTEM ACTIVE</div>
+            </div>
+            
+            <div class="card">
+                <h2>Project Team</h2>
+                <p style="margin: 5px 0;">• M. Sai Teja</p>
+                <p style="margin: 5px 0;">• K. Rajesh</p>
+                <p style="margin: 15px 0 5px 0;"><strong>Guide:</strong> Dr. P. Vijayaragavan</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
